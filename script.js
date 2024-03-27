@@ -18,10 +18,10 @@ function generateFood() {
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "green";
     ctx.fillRect(food.x, food.y, 10, 10);
 
-    ctx.fillStyle = "green";
+    ctx.fillStyle = "blue";
     snake.forEach(segment => {
         ctx.fillRect(segment.x, segment.y, 10, 10);
     });
